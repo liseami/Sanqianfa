@@ -14,30 +14,42 @@ struct MainTabbar: View {
             ForEach(mainViewModel.allTabbar, id: \.info.1) { tabbar in
                 tab(tabbar)
                 if tabbar == .things {
-                    Circle()
-                        .frame(width: 68, height: 68, alignment: .center)
-                        .foregroundColor(.SQ.f1)
-                        .padding(.horizontal,12)
-                        .overlay(alignment: .center) {
-                            Image(systemName: "plus")
-                                .resizable()
-                                .renderingMode(.template)
-                                .bold()
-                                .foregroundColor(.SQ.b1)
-                                .frame(width: 16, height: 16, alignment: .center)
-                                
-                        }
+                    addBtn()
                 }
             }
         }
+        .padding(.top, 12)
+        .background(bottomGradientView)
         .frame(maxHeight: .infinity, alignment: .bottom)
     }
 
+    // MARK: - Bottom Gradient View
+    private var bottomGradientView: some View {
+        ZStack {
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .colorScheme(.dark)
+                .mask(
+                    VStack(spacing: 0) {
+                        LinearGradient(colors: [.clear, .black], startPoint: .top, endPoint: .bottom)
+                        Rectangle()
+                    }
+                )
+                .frame(height: UIScreen.main.bounds.height * 0.42)
+        }
+    }
+
     
-    
-    
-    
-    
+    func addBtn() -> some View {
+        Circle()
+            .frame(width: 68, height: 68, alignment: .center)
+            .foregroundColor(.SQ.f1)
+            .padding(.horizontal, 12)
+            .overlay(alignment: .center) {
+                SQDesign.SQICON(systemName: "plus",size: 16, color: .SQ.b1)
+            }
+    }
+
     func tab(_ tabbar: MainViewModel.Tabbar) -> some View {
         let selected = tabbar.info.1 == mainViewModel.currentTabbar.info.1
         return Button {
@@ -46,11 +58,7 @@ struct MainTabbar: View {
             }
         } label: {
             VStack(alignment: .center, spacing: 8.1371) {
-                Image(tabbar.info.0)
-                    .resizable()
-                    .renderingMode(.template)
-                    .foregroundColor(selected ? .SQ.main : .SQ.f2)
-                    .frame(width: 24, height: 24, alignment: .center)
+                SQDesign.SQICON(name:tabbar.info.0,color: selected ? .SQ.main : .SQ.f2)
                 Text(tabbar.info.1)
                     .makeSQText(.SQ.f3, color: selected ? .SQ.main : .SQ.f2)
             }
@@ -60,8 +68,8 @@ struct MainTabbar: View {
 }
 
 #Preview {
-    ZStack(alignment: .center) {
-        Color.SQ.b1.ignoresSafeArea()
-        MainTabbar()
-    }
+    ContentView()
+        .onAppear {
+            MainViewModel.shared.currentTabbar = .things
+        }
 }

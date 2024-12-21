@@ -48,6 +48,9 @@ extension Color {
         /// 背景色3号色
         static let b3 = Color(hex: "191619")
         static let main = Color.init(hex: "B44E4E")
+        static let green = Color.init(hex: "057C5B")
+        static let blue = Color.init(hex: "4C51CA")
+        
     }
 }
 

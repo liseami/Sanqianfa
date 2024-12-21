@@ -16,13 +16,13 @@ struct ContentView: View {
                 Group{
                     switch mainViewModel.currentTabbar {
                     case .home:
-                        Text("主页")
+                        HomeView()
                     case .things:
-                        Text("历史")
+                       HistrotyView()
                     case .learn:
-                        Text("原理")
+                      LearningView()
                     case .profile:
-                        Text("我的")
+                        ProfileView()
                     }
                 }
                 .makeSQText(.SQ.big3b, color: .SQ.f1)

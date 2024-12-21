@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A270D4642D169700000E4594 /* HistrotyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A270D4632D169700000E4594 /* HistrotyView.swift */; };
 		A2804EE92D06B93700427469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE62D06B93700427469 /* ContentView.swift */; };
 		A2804EEA2D06B93700427469 /* SanqianfaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE72D06B93700427469 /* SanqianfaApp.swift */; };
 		A2804EEB2D06B93700427469 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2804EE32D06B93700427469 /* Preview Assets.xcassets */; };
@@ -18,9 +19,16 @@
 		A2804EFD2D06C3AD00427469 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EFC2D06C3AD00427469 /* UserManager.swift */; };
 		A2804EFF2D06C3B300427469 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EFE2D06C3B300427469 /* MainViewModel.swift */; };
 		A2804F012D06C90700427469 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804F002D06C90700427469 /* MainTabbar.swift */; };
+		A2EC2DFC2D1698E900AA5A3E /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2DFB2D1698E900AA5A3E /* String+.swift */; };
+		A2EC2DFE2D169AC100AA5A3E /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */; };
+		A2EC2E002D16A0EB00AA5A3E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2DFF2D16A0EB00AA5A3E /* ProfileView.swift */; };
+		A2EC2E022D16A4F600AA5A3E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2E012D16A4F600AA5A3E /* ProfileViewModel.swift */; };
+		A2EC2E042D16A4FF00AA5A3E /* ProfileSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2E032D16A4FF00AA5A3E /* ProfileSettingItem.swift */; };
+		A2EC2E062D16A69A00AA5A3E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2E052D16A69A00AA5A3E /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A270D4632D169700000E4594 /* HistrotyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistrotyView.swift; sourceTree = "<group>"; };
 		A2804ED22D06B92E00427469 /* Sanqianfa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanqianfa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2804EE32D06B93700427469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A2804EE52D06B93700427469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +41,12 @@
 		A2804EFC2D06C3AD00427469 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A2804EFE2D06C3B300427469 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		A2804F002D06C90700427469 /* MainTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbar.swift; sourceTree = "<group>"; };
+		A2EC2DFB2D1698E900AA5A3E /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
+		A2EC2DFF2D16A0EB00AA5A3E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A2EC2E012D16A4F600AA5A3E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A2EC2E032D16A4FF00AA5A3E /* ProfileSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingItem.swift; sourceTree = "<group>"; };
+		A2EC2E052D16A69A00AA5A3E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 				A2804EE62D06B93700427469 /* ContentView.swift */,
 				A2804EE72D06B93700427469 /* SanqianfaApp.swift */,
 				A2804EEE2D06B94E00427469 /* DesignSystem */,
+				A2EC2DF92D1698D200AA5A3E /* Tool */,
 				A2804EED2D06B94000427469 /* MVVM */,
 				A2804EE42D06B93700427469 /* Preview Content */,
 			);
@@ -115,6 +130,7 @@
 		A2804EF82D06C38E00427469 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A2EC2E032D16A4FF00AA5A3E /* ProfileSettingItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,7 +138,11 @@
 		A2804EFA2D06C39D00427469 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A2EC2DFF2D16A0EB00AA5A3E /* ProfileView.swift */,
+				A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */,
 				A2804F002D06C90700427469 /* MainTabbar.swift */,
+				A270D4632D169700000E4594 /* HistrotyView.swift */,
+				A2EC2E052D16A69A00AA5A3E /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,10 +150,27 @@
 		A2804EFB2D06C3A200427469 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A2EC2E012D16A4F600AA5A3E /* ProfileViewModel.swift */,
 				A2804EFC2D06C3AD00427469 /* UserManager.swift */,
 				A2804EFE2D06C3B300427469 /* MainViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A2EC2DF92D1698D200AA5A3E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC2DFA2D1698DF00AA5A3E /* Extension */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A2EC2DFA2D1698DF00AA5A3E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC2DFB2D1698E900AA5A3E /* String+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,12 +247,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2804EF22D06B96600427469 /* Font.swift in Sources */,
+				A2EC2E002D16A0EB00AA5A3E /* ProfileView.swift in Sources */,
 				A2804EE92D06B93700427469 /* ContentView.swift in Sources */,
 				A2804EFD2D06C3AD00427469 /* UserManager.swift in Sources */,
 				A2804F012D06C90700427469 /* MainTabbar.swift in Sources */,
 				A2804EEA2D06B93700427469 /* SanqianfaApp.swift in Sources */,
+				A2EC2E022D16A4F600AA5A3E /* ProfileViewModel.swift in Sources */,
 				A2804EF72D06BE1600427469 /* SQDesign.swift in Sources */,
+				A2EC2E042D16A4FF00AA5A3E /* ProfileSettingItem.swift in Sources */,
+				A270D4642D169700000E4594 /* HistrotyView.swift in Sources */,
+				A2EC2DFC2D1698E900AA5A3E /* String+.swift in Sources */,
+				A2EC2DFE2D169AC100AA5A3E /* LearningView.swift in Sources */,
 				A2804EF42D06BD4D00427469 /* ViewFuns.swift in Sources */,
+				A2EC2E062D16A69A00AA5A3E /* HomeView.swift in Sources */,
 				A2804EF02D06B96200427469 /* Color.swift in Sources */,
 				A2804EFF2D06C3B300427469 /* MainViewModel.swift in Sources */,
 			);
