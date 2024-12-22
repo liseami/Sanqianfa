@@ -41,13 +41,20 @@ struct MainTabbar: View {
 
     
     func addBtn() -> some View {
-        Circle()
-            .frame(width: 68, height: 68, alignment: .center)
-            .foregroundColor(.SQ.f1)
-            .padding(.horizontal, 12)
-            .overlay(alignment: .center) {
-                SQDesign.SQICON(systemName: "plus",size: 16, color: .SQ.b1)
+        SQDesign.SQButton {
+            withAnimation {
+                mainViewModel.showInputCard = true
             }
+        } label: {
+            Circle()
+                .frame(width: 68, height: 68, alignment: .center)
+                .foregroundColor(.SQ.f1)
+                .padding(.horizontal, 12)
+                .overlay(alignment: .center) {
+                    SQDesign.SQICON(systemName: "plus",size: 16, color: .SQ.b1)
+                }
+        }
+
     }
 
     func tab(_ tabbar: MainViewModel.Tabbar) -> some View {

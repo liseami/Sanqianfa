@@ -10,6 +10,8 @@ import SwiftUI
 class MainViewModel: ObservableObject {
     static let shared : MainViewModel = .init()
     @Published var currentTabbar: Tabbar = .home
+    @Published var showInputCard : Bool = false
+    @Published var userInput : String = ""
     let allTabbar : [Tabbar] = [.home,.things,.learn,.profile]
     enum Tabbar : CaseIterable {
         case home, things, learn, profile

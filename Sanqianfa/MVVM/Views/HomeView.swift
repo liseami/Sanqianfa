@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     // MARK: - Main View
+
     var body: some View {
         ScrollView(.vertical) {
             LazyVStack(alignment: .leading, spacing: 12) {
@@ -22,8 +23,9 @@ struct HomeView: View {
             .padding(.horizontal, 16)
         }
     }
-    
+
     // MARK: - Header Section
+
     private var headerSection: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("三钱法")
@@ -33,15 +35,17 @@ struct HomeView: View {
                 .padding(.bottom, 12)
         }
     }
-    
+
     // MARK: - Cards Section
+
     private var cardsSection: some View {
         ForEach(0..<12) { _ in
             card()
         }
     }
-    
+
     // MARK: - Quick Test Item View
+
     private func quickTestItem(color: Color, iconName: String, title: String) -> some View {
         RoundedRectangle(cornerRadius: 24)
             .fill(color)
@@ -53,8 +57,9 @@ struct HomeView: View {
                 }
             }
     }
-    
+
     // MARK: - Quick Test View
+
     private var quikTestView: some View {
         HStack(alignment: .center, spacing: 12) {
             quickTestItem(color: .SQ.green, iconName: "home_today", title: "今日运势")
@@ -63,29 +68,31 @@ struct HomeView: View {
         }
         .frame(height: 160)
     }
-    
+
     // MARK: - Card View
+
     private func card() -> some View {
         VStack(alignment: .center, spacing: 12) {
             Text("卦相分享")
                 .makeSQText(.SQ.f3, color: .SQ.f2)
                 .kerning(3)
-            
+
             Text(String.randomChineseString(length: Int.random(in: 4...24)))
                 .multilineTextAlignment(.center)
                 .makeSQText(.SQ.big2b, color: .SQ.f1)
-            
+
             Text(String.randomChineseString(length: Int.random(in: 24...120)))
                 .makeSQText(.SQ.f2, color: .SQ.f2)
-            
+
             hexagramCircle
         }
         .padding(.all, 24)
         .background(Color.SQ.b2)
         .clipShape(RoundedRectangle(cornerRadius: 24))
     }
-    
+
     // MARK: - Hexagram Circle
+
     private var hexagramCircle: some View {
         Circle()
             .fill(Color.SQ.main)
