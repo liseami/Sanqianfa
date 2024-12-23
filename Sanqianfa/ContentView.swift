@@ -32,6 +32,9 @@ struct ContentView: View {
                     HomeAskView()
                 }
             }
+            .fullScreenCover(isPresented: $mainViewModel.showDivinationView) {
+                DivinationView()
+            }
         }
     }
 

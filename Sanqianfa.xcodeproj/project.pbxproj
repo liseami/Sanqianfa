@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21C920F2D195F9700CFF34B /* DivinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C920E2D195F9700CFF34B /* DivinationView.swift */; };
 		A270D4642D169700000E4594 /* HistrotyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A270D4632D169700000E4594 /* HistrotyView.swift */; };
 		A2804EE92D06B93700427469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE62D06B93700427469 /* ContentView.swift */; };
 		A2804EEA2D06B93700427469 /* SanqianfaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE72D06B93700427469 /* SanqianfaApp.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A21C920E2D195F9700CFF34B /* DivinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationView.swift; sourceTree = "<group>"; };
 		A270D4632D169700000E4594 /* HistrotyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistrotyView.swift; sourceTree = "<group>"; };
 		A2804ED22D06B92E00427469 /* Sanqianfa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanqianfa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2804EE32D06B93700427469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */,
 				A2EC2DFF2D16A0EB00AA5A3E /* ProfileView.swift */,
 				A2804F002D06C90700427469 /* MainTabbar.swift */,
+				A21C920E2D195F9700CFF34B /* DivinationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				A2804EE92D06B93700427469 /* ContentView.swift in Sources */,
 				A2804EFD2D06C3AD00427469 /* UserManager.swift in Sources */,
 				A2804F012D06C90700427469 /* MainTabbar.swift in Sources */,
+				A21C920F2D195F9700CFF34B /* DivinationView.swift in Sources */,
 				A2804EEA2D06B93700427469 /* SanqianfaApp.swift in Sources */,
 				A2EC2E022D16A4F600AA5A3E /* ProfileViewModel.swift in Sources */,
 				A2804EF72D06BE1600427469 /* SQDesign.swift in Sources */,

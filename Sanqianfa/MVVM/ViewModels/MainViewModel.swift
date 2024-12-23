@@ -12,6 +12,7 @@ class MainViewModel: ObservableObject {
     @Published var currentTabbar: Tabbar = .home
     @Published var showInputCard : Bool = false
     @Published var userInput : String = ""
+    @Published var showDivinationView : Bool = false
     let allTabbar : [Tabbar] = [.home,.things,.learn,.profile]
     enum Tabbar : CaseIterable {
         case home, things, learn, profile
