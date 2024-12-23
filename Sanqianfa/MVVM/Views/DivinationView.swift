@@ -3,16 +3,21 @@
 //  Sanqianfa
 //
 //  Created by 赵翔宇 on 2024/12/23.
-//
+
 import SwiftUI
 
 struct DivinationView: View {
     @State var rotations: [CGFloat] = [0, 0, 0]
     @State var coinFace: [Bool] = [true, true, true]
-    @State var yao: [Int] = [-1, -1, -1, -1, -1, -1]
+    @State var yangCount: [Int] = [-1, -1, -1, -1, -1, -1]
     @State var divinationIndex: Int = 0
     @State var btnLock: Bool = false
-
+    @State var yao: [Yao] = []
+    @State var gua: Hexagram?
+    @State var bianGua: Hexagram?
+    @State var showGua: Bool = false
+    let duration : Double = 0.1
+    
     var isOver: Bool {
         divinationIndex == 6
     }
@@ -21,8 +26,10 @@ struct DivinationView: View {
         ZStack {
             Color.SQ.b1.ignoresSafeArea()
             VStack(alignment: .center, spacing: 12) {
-                if !isOver{
+                if !isOver {
                     coins
+                } else {
+                    Text(MainViewModel.shared.userInput).makeSQText(.SQ.big1b, color: .SQ.f1)
                 }
                 Spacer()
                 result
@@ -41,28 +48,50 @@ struct DivinationView: View {
         }
     }
 
+    @ViewBuilder
     var result: some View {
-        VStack(alignment: .center, spacing: 12) {
-            ForEach(Array(0 ..< 6).reversed(), id: \.self) { index in
-                let yangCount = yao[index]
+        if isOver {
+            if showGua {
                 HStack(alignment: .center, spacing: 12) {
-                    switch yangCount {
-                    case 3: SQDesign.YANG()
-                    case 2: SQDesign.YANG()
-                    case 1: SQDesign.YIN()
-                    case 0: SQDesign.YIN()
-                    default: EmptyView()
+                    VStack(alignment: .center, spacing: 12) {
+                        Text("此刻")
+                            .scaleEffect(0.6)
+                        SQDesign.GUA(self.gua!)
                     }
-                    switch yangCount {
-                    case 3: Text("老阳")
-                    case 2: Text("少阳")
-                    case 1: Text("少阴")
-                    case 0: Text("老阴")
-                    default: Text("未定")
+                    VStack(alignment: .center, spacing: 12) {
+                        Text("未来")
+                            .scaleEffect(0.6)
+                        SQDesign.GUA(self.bianGua!)
                     }
                 }
-                .makeSQText(.SQ.f3, color: .SQ.f2)
+                .makeSQText(.SQ.f1, color: .SQ.main)
+                .scaleEffect(3)
+                .transition(.scale.combined(with: .blurReplace))
             }
+        } else {
+            VStack(alignment: .center, spacing: 12) {
+                ForEach(Array(0 ..< 6).reversed(), id: \.self) { index in
+                    let yangCount = yangCount[index]
+                    HStack(alignment: .center, spacing: 12) {
+                        switch yangCount {
+                        case 3: SQDesign.YANG()
+                        case 2: SQDesign.YANG()
+                        case 1: SQDesign.YIN()
+                        case 0: SQDesign.YIN()
+                        default: EmptyView()
+                        }
+                        switch yangCount {
+                        case 3: Text("老阳")
+                        case 2: Text("少阳")
+                        case 1: Text("少阴")
+                        case 0: Text("老阴")
+                        default: Text("未定")
+                        }
+                    }
+                    .makeSQText(.SQ.f3, color: .SQ.f2)
+                }
+            }
+            .animation(.smooth, value: isOver)
         }
     }
 
@@ -75,8 +104,11 @@ struct DivinationView: View {
                 Circle()
                     .foregroundColor(face ? .SQ.main : .SQ.blue)
                     .overlay {
-                        Text("\(index)")
-                            .makeSQText(.SQ.big2b, color: .SQ.f1)
+                        if face {
+                            SQDesign.YANG()
+                        } else {
+                            SQDesign.YIN()
+                        }
                     }
                     .rotation3DEffect(.degrees(rotation), axis: (x: 0, y: 1, z: 0))
             }
@@ -85,7 +117,7 @@ struct DivinationView: View {
 
     func divination() {
         btnLock = true
-        let duration  : Double = 0.1
+        
         withAnimation(.easeInOut(duration: duration)) {
             for i in 0 ..< 3 {
                 let randomr = Int.random(in: 1 ... 120)
@@ -98,30 +130,47 @@ struct DivinationView: View {
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-            // 确认随机结果
-            for i in 0 ..< 3 {
-                self.coinFace[i] = Bool.random()
-            }
-
-            // 根据结果，由下向上，确定1爻
-            var yangCount = 0
-            for face in coinFace {
-                if face == true {
-                    yangCount += 1
+            withAnimation {
+                // 确认随机结果
+                for i in 0 ..< 3 {
+                    self.coinFace[i] = Bool.random()
                 }
-            }
-            //
-//            var yangCount1 = coinFace.filter { $0 }.count
-            print(yangCount)
 
-            self.yao[divinationIndex] = yangCount
-            print(yao)
-            divinationIndex += 1
-            btnLock = false
+                // 根据结果，由下向上，确定1爻
+                var yangCount = 0
+                for face in coinFace {
+                    if face == true {
+                        yangCount += 1
+                    }
+                }
+                //
+                //            var yangCount1 = coinFace.filter { $0 }.count
+                //            print(yangCount)
+
+                self.yangCount[divinationIndex] = yangCount
+                //            print(yangCount)
+                divinationIndex += 1
+                if isOver {
+                    self.yao = self.yangCount.map { yangCount in
+                        DivinationTool.getYaoState(from: yangCount)
+                    }
+                    self.gua = DivinationTool.getHexagram(from: self.yao)
+                    self.bianGua = DivinationTool.getChangedHexagram(from: self.yao)
+                    print(gua)
+                    print(bianGua)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        showGua = true
+                    }
+                }
+                btnLock = false
+            }
         }
     }
 }
 
 #Preview {
     DivinationView()
+        .onAppear {
+            MainViewModel.shared.userInput = "我今年的桃花运怎么样？"
+        }
 }
