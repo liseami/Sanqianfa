@@ -15,11 +15,7 @@ struct SanqianfaApp: App {
             if userManager.userLogged {
                 ContentView()
             }else{
-                Text("登录页面")
-                    .onTapGesture {
-                        userManager.userLogged = true
-                    }
-                    .foregroundColor(.black)
+               LoginView()
             }
         }
     }

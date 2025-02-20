@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A21C920F2D195F9700CFF34B /* DivinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C920E2D195F9700CFF34B /* DivinationView.swift */; };
 		A21C92112D196A6900CFF34B /* DivinationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C92102D196A6900CFF34B /* DivinationTool.swift */; };
+		A22B5F552D66EE88007DF3F6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F542D66EE88007DF3F6 /* LoginView.swift */; };
+		A22B5F572D66F03F007DF3F6 /* PhoneNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F562D66F03F007DF3F6 /* PhoneNumberInputView.swift */; };
+		A22B5F592D66F08F007DF3F6 /* WellComeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F582D66F08F007DF3F6 /* WellComeView.swift */; };
+		A22B5F5B2D66F4C0007DF3F6 /* SMSCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F5A2D66F4C0007DF3F6 /* SMSCodeInputView.swift */; };
 		A270D4642D169700000E4594 /* HistrotyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A270D4632D169700000E4594 /* HistrotyView.swift */; };
 		A2804EE92D06B93700427469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE62D06B93700427469 /* ContentView.swift */; };
 		A2804EEA2D06B93700427469 /* SanqianfaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE72D06B93700427469 /* SanqianfaApp.swift */; };
@@ -35,6 +39,10 @@
 /* Begin PBXFileReference section */
 		A21C920E2D195F9700CFF34B /* DivinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationView.swift; sourceTree = "<group>"; };
 		A21C92102D196A6900CFF34B /* DivinationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationTool.swift; sourceTree = "<group>"; };
+		A22B5F542D66EE88007DF3F6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A22B5F562D66F03F007DF3F6 /* PhoneNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputView.swift; sourceTree = "<group>"; };
+		A22B5F582D66F08F007DF3F6 /* WellComeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellComeView.swift; sourceTree = "<group>"; };
+		A22B5F5A2D66F4C0007DF3F6 /* SMSCodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeInputView.swift; sourceTree = "<group>"; };
 		A270D4632D169700000E4594 /* HistrotyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistrotyView.swift; sourceTree = "<group>"; };
 		A2804ED22D06B92E00427469 /* Sanqianfa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanqianfa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2804EE32D06B93700427469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -148,6 +156,10 @@
 		A2804EFA2D06C39D00427469 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A22B5F542D66EE88007DF3F6 /* LoginView.swift */,
+				A22B5F5A2D66F4C0007DF3F6 /* SMSCodeInputView.swift */,
+				A22B5F582D66F08F007DF3F6 /* WellComeView.swift */,
+				A22B5F562D66F03F007DF3F6 /* PhoneNumberInputView.swift */,
 				A2906B6E2D60538B00F264D4 /* AnswerView.swift */,
 				A2A048612D17F83C00571542 /* HomeAskView.swift */,
 				A2EC2E052D16A69A00AA5A3E /* HomeView.swift */,
@@ -269,6 +281,7 @@
 				A2906B6F2D60538B00F264D4 /* AnswerView.swift in Sources */,
 				A2EC2E002D16A0EB00AA5A3E /* ProfileView.swift in Sources */,
 				A2804EE92D06B93700427469 /* ContentView.swift in Sources */,
+				A22B5F592D66F08F007DF3F6 /* WellComeView.swift in Sources */,
 				A2804EFD2D06C3AD00427469 /* UserManager.swift in Sources */,
 				A2804F012D06C90700427469 /* MainTabbar.swift in Sources */,
 				A21C920F2D195F9700CFF34B /* DivinationView.swift in Sources */,
@@ -277,8 +290,11 @@
 				A2804EF72D06BE1600427469 /* SQDesign.swift in Sources */,
 				A2A048622D17F83C00571542 /* HomeAskView.swift in Sources */,
 				A2EC2E042D16A4FF00AA5A3E /* ProfileSettingItem.swift in Sources */,
+				A22B5F572D66F03F007DF3F6 /* PhoneNumberInputView.swift in Sources */,
 				A270D4642D169700000E4594 /* HistrotyView.swift in Sources */,
 				A2EC2DFC2D1698E900AA5A3E /* String+.swift in Sources */,
+				A22B5F552D66EE88007DF3F6 /* LoginView.swift in Sources */,
+				A22B5F5B2D66F4C0007DF3F6 /* SMSCodeInputView.swift in Sources */,
 				A2EC2DFE2D169AC100AA5A3E /* LearningView.swift in Sources */,
 				A2804EF42D06BD4D00427469 /* ViewFuns.swift in Sources */,
 				A2EC2E062D16A69A00AA5A3E /* HomeView.swift in Sources */,
@@ -331,7 +347,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -393,6 +409,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -419,6 +436,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sanqianfa/Preview Content\"";
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -448,6 +466,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sanqianfa/Preview Content\"";
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
