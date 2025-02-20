@@ -21,6 +21,8 @@
 		A2804EFD2D06C3AD00427469 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EFC2D06C3AD00427469 /* UserManager.swift */; };
 		A2804EFF2D06C3B300427469 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EFE2D06C3B300427469 /* MainViewModel.swift */; };
 		A2804F012D06C90700427469 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804F002D06C90700427469 /* MainTabbar.swift */; };
+		A2906B6F2D60538B00F264D4 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906B6E2D60538B00F264D4 /* AnswerView.swift */; };
+		A2906B722D60569C00F264D4 /* EventSource in Frameworks */ = {isa = PBXBuildFile; productRef = A2906B712D60569C00F264D4 /* EventSource */; };
 		A2A048622D17F83C00571542 /* HomeAskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A048612D17F83C00571542 /* HomeAskView.swift */; };
 		A2EC2DFC2D1698E900AA5A3E /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2DFB2D1698E900AA5A3E /* String+.swift */; };
 		A2EC2DFE2D169AC100AA5A3E /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */; };
@@ -46,6 +48,7 @@
 		A2804EFC2D06C3AD00427469 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A2804EFE2D06C3B300427469 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		A2804F002D06C90700427469 /* MainTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbar.swift; sourceTree = "<group>"; };
+		A2906B6E2D60538B00F264D4 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		A2A048612D17F83C00571542 /* HomeAskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAskView.swift; sourceTree = "<group>"; };
 		A2EC2DFB2D1698E900AA5A3E /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2906B722D60569C00F264D4 /* EventSource in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +148,7 @@
 		A2804EFA2D06C39D00427469 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A2906B6E2D60538B00F264D4 /* AnswerView.swift */,
 				A2A048612D17F83C00571542 /* HomeAskView.swift */,
 				A2EC2E052D16A69A00AA5A3E /* HomeView.swift */,
 				A270D4632D169700000E4594 /* HistrotyView.swift */,
@@ -199,6 +204,7 @@
 			);
 			name = Sanqianfa;
 			packageProductDependencies = (
+				A2906B712D60569C00F264D4 /* EventSource */,
 			);
 			productName = Sanqianfa;
 			productReference = A2804ED22D06B92E00427469 /* Sanqianfa.app */;
@@ -228,6 +234,9 @@
 			);
 			mainGroup = A2804EC92D06B92E00427469;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A2906B702D60569C00F264D4 /* XCRemoteSwiftPackageReference "EventSource" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A2804ED32D06B92E00427469 /* Products */;
 			projectDirPath = "";
@@ -257,6 +266,7 @@
 			files = (
 				A21C92112D196A6900CFF34B /* DivinationTool.swift in Sources */,
 				A2804EF22D06B96600427469 /* Font.swift in Sources */,
+				A2906B6F2D60538B00F264D4 /* AnswerView.swift in Sources */,
 				A2EC2E002D16A0EB00AA5A3E /* ProfileView.swift in Sources */,
 				A2804EE92D06B93700427469 /* ContentView.swift in Sources */,
 				A2804EFD2D06C3AD00427469 /* UserManager.swift in Sources */,
@@ -479,6 +489,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2906B702D60569C00F264D4 /* XCRemoteSwiftPackageReference "EventSource" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Recouse/EventSource.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2906B712D60569C00F264D4 /* EventSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2906B702D60569C00F264D4 /* XCRemoteSwiftPackageReference "EventSource" */;
+			productName = EventSource;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2804ECA2D06B92E00427469 /* Project object */;
 }

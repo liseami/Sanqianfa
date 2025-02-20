@@ -1,0 +1,15 @@
+{
+  "originHash" : "6677ab6a09ae02ad73d7754dbf9017d28d99b215114a6410dbe68d25afeec387",
+  "pins" : [
+    {
+      "identity" : "eventsource",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Recouse/EventSource.git",
+      "state" : {
+        "revision" : "9bd7c5aaba81f06511c4f681643ef991c6ae3477",
+        "version" : "0.1.3"
+      }
+    }
+  ],
+  "version" : 3
+}

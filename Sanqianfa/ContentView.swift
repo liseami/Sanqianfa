@@ -35,6 +35,9 @@ struct ContentView: View {
             .fullScreenCover(isPresented: $mainViewModel.showDivinationView) {
                 DivinationView()
             }
+            .sheet(isPresented: $mainViewModel.showAnswerView) {
+                AnswerView()
+            }
         }
     }
 

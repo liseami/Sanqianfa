@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct DivinationView: View {
+    @ObservedObject var mainViewModel : MainViewModel = .shared
     @State var rotations: [CGFloat] = [0, 0, 0]
     @State var coinFace: [Bool] = [true, true, true]
     @State var yangCount: [Int] = [-1, -1, -1, -1, -1, -1]
@@ -27,7 +28,8 @@ struct DivinationView: View {
             Color.SQ.b1.ignoresSafeArea()
             VStack(alignment: .center, spacing: 12) {
                 if !isOver {
-                    coins
+                  
+                    
                 } else {
                     Text(MainViewModel.shared.userInput).makeSQText(.SQ.big1b, color: .SQ.f1)
                 }
@@ -36,6 +38,16 @@ struct DivinationView: View {
                 Spacer()
                 SQDesign.SmallBtn(text: isOver ? "解卦" : "起卦\(divinationIndex + 1) / 6") {
                     if isOver {
+                        // 关闭起卦页面
+                        mainViewModel.showDivinationView = false
+                        // 等待0.5秒
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                            // 把结果传递给mainViewModel
+                            mainViewModel.currentGua = self.gua?.name ?? ""
+                            mainViewModel.futureGua = self.bianGua?.name ?? ""
+                            // 打开回答页面
+                            mainViewModel.showAnswerView = true
+                        })
                     } else {
                         if btnLock {
                         } else {
