@@ -1,0 +1,15 @@
+{
+  "originHash" : "bce1fb8f85e96c3b4577a9c101d8d823b72f18e9e97c45322fd52bcad2723130",
+  "pins" : [
+    {
+      "identity" : "eventsource",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitee.com/lieami/EventSource.git",
+      "state" : {
+        "revision" : "9bd7c5aaba81f06511c4f681643ef991c6ae3477",
+        "version" : "0.1.3"
+      }
+    }
+  ],
+  "version" : 3
+}

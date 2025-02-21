@@ -5,6 +5,19 @@ class ProfileViewModel: ObservableObject {
     
     init() {
         setupSettingGroups()
+
+    }
+    
+    @Published var user : User = .init()
+    
+    
+    
+    // 获取用户信息
+    @MainActor
+    func getUserInfo() async {
+        let  t = UserAPI.profile
+        let r = await Networking.request_async(t)
+        if r.is200Ok { if let user = r.mapObject(User.self){ self.user = user } }
     }
     
     private func setupSettingGroups() {

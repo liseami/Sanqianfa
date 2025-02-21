@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40E16A6E95B53BF232E3FD7F /* Pods_Sanqianfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4591B74E4D336F53645092E7 /* Pods_Sanqianfa.framework */; };
 		A21C920F2D195F9700CFF34B /* DivinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C920E2D195F9700CFF34B /* DivinationView.swift */; };
 		A21C92112D196A6900CFF34B /* DivinationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C92102D196A6900CFF34B /* DivinationTool.swift */; };
 		A22B5F552D66EE88007DF3F6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F542D66EE88007DF3F6 /* LoginView.swift */; };
 		A22B5F572D66F03F007DF3F6 /* PhoneNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F562D66F03F007DF3F6 /* PhoneNumberInputView.swift */; };
 		A22B5F592D66F08F007DF3F6 /* WellComeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F582D66F08F007DF3F6 /* WellComeView.swift */; };
 		A22B5F5B2D66F4C0007DF3F6 /* SMSCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F5A2D66F4C0007DF3F6 /* SMSCodeInputView.swift */; };
+		A22B5F982D66FD29007DF3F6 /* Response+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F8F2D66FD29007DF3F6 /* Response+Extension.swift */; };
+		A22B5F992D66FD29007DF3F6 /* SQAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F952D66FD29007DF3F6 /* SQAPITarget.swift */; };
+		A22B5F9B2D66FD29007DF3F6 /* NetworkPopPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F922D66FD29007DF3F6 /* NetworkPopPlugin.swift */; };
+		A22B5F9D2D66FD29007DF3F6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F942D66FD29007DF3F6 /* Networking.swift */; };
+		A22B5F9E2D66FD29007DF3F6 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F852D66FD29007DF3F6 /* LoginAPI.swift */; };
+		A22B5FA02D66FD29007DF3F6 /* MoyaProviderType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F8D2D66FD29007DF3F6 /* MoyaProviderType+Extension.swift */; };
+		A22B5FA22D66FD29007DF3F6 /* MoyaResult+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F8E2D66FD29007DF3F6 /* MoyaResult+Extension.swift */; };
+		A22B5FA62D66FD29007DF3F6 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F912D66FD29007DF3F6 /* NetworkLoggerPlugin.swift */; };
 		A270D4642D169700000E4594 /* HistrotyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A270D4632D169700000E4594 /* HistrotyView.swift */; };
 		A2804EE92D06B93700427469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE62D06B93700427469 /* ContentView.swift */; };
 		A2804EEA2D06B93700427469 /* SanqianfaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EE72D06B93700427469 /* SanqianfaApp.swift */; };
@@ -26,7 +35,11 @@
 		A2804EFF2D06C3B300427469 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804EFE2D06C3B300427469 /* MainViewModel.swift */; };
 		A2804F012D06C90700427469 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2804F002D06C90700427469 /* MainTabbar.swift */; };
 		A2906B6F2D60538B00F264D4 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2906B6E2D60538B00F264D4 /* AnswerView.swift */; };
-		A2906B722D60569C00F264D4 /* EventSource in Frameworks */ = {isa = PBXBuildFile; productRef = A2906B712D60569C00F264D4 /* EventSource */; };
+		A29829592D67160A00DE5468 /* EventSource in Frameworks */ = {isa = PBXBuildFile; productRef = A29829582D67160A00DE5468 /* EventSource */; };
+		A298295B2D671CC600DE5468 /* TodoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298295A2D671CC600DE5468 /* TodoAPI.swift */; };
+		A298295D2D6846F500DE5468 /* AsyncTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298295C2D6846F500DE5468 /* AsyncTest.swift */; };
+		A298295F2D68688E00DE5468 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298295E2D68688E00DE5468 /* User.swift */; };
+		A29829612D68697100DE5468 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29829602D68697100DE5468 /* UserAPI.swift */; };
 		A2A048622D17F83C00571542 /* HomeAskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A048612D17F83C00571542 /* HomeAskView.swift */; };
 		A2EC2DFC2D1698E900AA5A3E /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2DFB2D1698E900AA5A3E /* String+.swift */; };
 		A2EC2DFE2D169AC100AA5A3E /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */; };
@@ -37,12 +50,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0812CBEF8C87EE22EC8220C4 /* Pods-Sanqianfa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanqianfa.debug.xcconfig"; path = "Target Support Files/Pods-Sanqianfa/Pods-Sanqianfa.debug.xcconfig"; sourceTree = "<group>"; };
+		4591B74E4D336F53645092E7 /* Pods_Sanqianfa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sanqianfa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AE466C6EEB8C792E1A85A4 /* Pods-Sanqianfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanqianfa.release.xcconfig"; path = "Target Support Files/Pods-Sanqianfa/Pods-Sanqianfa.release.xcconfig"; sourceTree = "<group>"; };
 		A21C920E2D195F9700CFF34B /* DivinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationView.swift; sourceTree = "<group>"; };
 		A21C92102D196A6900CFF34B /* DivinationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationTool.swift; sourceTree = "<group>"; };
 		A22B5F542D66EE88007DF3F6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A22B5F562D66F03F007DF3F6 /* PhoneNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputView.swift; sourceTree = "<group>"; };
 		A22B5F582D66F08F007DF3F6 /* WellComeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellComeView.swift; sourceTree = "<group>"; };
 		A22B5F5A2D66F4C0007DF3F6 /* SMSCodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeInputView.swift; sourceTree = "<group>"; };
+		A22B5F852D66FD29007DF3F6 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		A22B5F8D2D66FD29007DF3F6 /* MoyaProviderType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProviderType+Extension.swift"; sourceTree = "<group>"; };
+		A22B5F8E2D66FD29007DF3F6 /* MoyaResult+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaResult+Extension.swift"; sourceTree = "<group>"; };
+		A22B5F8F2D66FD29007DF3F6 /* Response+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Extension.swift"; sourceTree = "<group>"; };
+		A22B5F912D66FD29007DF3F6 /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		A22B5F922D66FD29007DF3F6 /* NetworkPopPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPopPlugin.swift; sourceTree = "<group>"; };
+		A22B5F942D66FD29007DF3F6 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A22B5F952D66FD29007DF3F6 /* SQAPITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQAPITarget.swift; sourceTree = "<group>"; };
 		A270D4632D169700000E4594 /* HistrotyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistrotyView.swift; sourceTree = "<group>"; };
 		A2804ED22D06B92E00427469 /* Sanqianfa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanqianfa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2804EE32D06B93700427469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,6 +81,10 @@
 		A2804EFE2D06C3B300427469 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		A2804F002D06C90700427469 /* MainTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbar.swift; sourceTree = "<group>"; };
 		A2906B6E2D60538B00F264D4 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		A298295A2D671CC600DE5468 /* TodoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAPI.swift; sourceTree = "<group>"; };
+		A298295C2D6846F500DE5468 /* AsyncTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTest.swift; sourceTree = "<group>"; };
+		A298295E2D68688E00DE5468 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A29829602D68697100DE5468 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		A2A048612D17F83C00571542 /* HomeAskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAskView.swift; sourceTree = "<group>"; };
 		A2EC2DFB2D1698E900AA5A3E /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		A2EC2DFD2D169AC100AA5A3E /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
@@ -71,18 +99,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2906B722D60569C00F264D4 /* EventSource in Frameworks */,
+				A29829592D67160A00DE5468 /* EventSource in Frameworks */,
+				40E16A6E95B53BF232E3FD7F /* Pods_Sanqianfa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD1E67F533511F416C7369F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4591B74E4D336F53645092E7 /* Pods_Sanqianfa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A22B5F8C2D66FD29007DF3F6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A22B5F852D66FD29007DF3F6 /* LoginAPI.swift */,
+				A29829602D68697100DE5468 /* UserAPI.swift */,
+				A298295A2D671CC600DE5468 /* TodoAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A22B5F902D66FD29007DF3F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A22B5F8D2D66FD29007DF3F6 /* MoyaProviderType+Extension.swift */,
+				A22B5F8E2D66FD29007DF3F6 /* MoyaResult+Extension.swift */,
+				A22B5F8F2D66FD29007DF3F6 /* Response+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A22B5F932D66FD29007DF3F6 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A22B5F912D66FD29007DF3F6 /* NetworkLoggerPlugin.swift */,
+				A22B5F922D66FD29007DF3F6 /* NetworkPopPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		A22B5F962D66FD29007DF3F6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A22B5F8C2D66FD29007DF3F6 /* API */,
+				A22B5F902D66FD29007DF3F6 /* Extension */,
+				A22B5F932D66FD29007DF3F6 /* Plugins */,
+				A22B5F942D66FD29007DF3F6 /* Networking.swift */,
+				A22B5F952D66FD29007DF3F6 /* SQAPITarget.swift */,
+				A298295C2D6846F500DE5468 /* AsyncTest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		A2804EC92D06B92E00427469 = {
 			isa = PBXGroup;
 			children = (
 				A2804EE82D06B93700427469 /* Sanqianfa */,
 				A2804ED32D06B92E00427469 /* Products */,
+				BC1DDAF944ED366D7FE1FDD3 /* Pods */,
+				2AD1E67F533511F416C7369F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +189,7 @@
 				A2804EE52D06B93700427469 /* Assets.xcassets */,
 				A2804EE62D06B93700427469 /* ContentView.swift */,
 				A2804EE72D06B93700427469 /* SanqianfaApp.swift */,
+				A22B5F962D66FD29007DF3F6 /* Networking */,
 				A2804EEE2D06B94E00427469 /* DesignSystem */,
 				A2EC2DF92D1698D200AA5A3E /* Tool */,
 				A2804EED2D06B94000427469 /* MVVM */,
@@ -149,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				A2EC2E032D16A4FF00AA5A3E /* ProfileSettingItem.swift */,
+				A298295E2D68688E00DE5468 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +282,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		BC1DDAF944ED366D7FE1FDD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0812CBEF8C87EE22EC8220C4 /* Pods-Sanqianfa.debug.xcconfig */,
+				58AE466C6EEB8C792E1A85A4 /* Pods-Sanqianfa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2804EE02D06B93200427469 /* Build configuration list for PBXNativeTarget "Sanqianfa" */;
 			buildPhases = (
+				9AC545D6B8A68C6D6B87DD97 /* [CP] Check Pods Manifest.lock */,
 				A2804ECE2D06B92E00427469 /* Sources */,
 				A2804ECF2D06B92E00427469 /* Frameworks */,
 				A2804ED02D06B92E00427469 /* Resources */,
+				CC0FAB933EDF41D4C77781A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,7 +310,7 @@
 			);
 			name = Sanqianfa;
 			packageProductDependencies = (
-				A2906B712D60569C00F264D4 /* EventSource */,
+				A29829582D67160A00DE5468 /* EventSource */,
 			);
 			productName = Sanqianfa;
 			productReference = A2804ED22D06B92E00427469 /* Sanqianfa.app */;
@@ -247,7 +341,7 @@
 			mainGroup = A2804EC92D06B92E00427469;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				A2906B702D60569C00F264D4 /* XCRemoteSwiftPackageReference "EventSource" */,
+				A29829572D67160A00DE5468 /* XCRemoteSwiftPackageReference "EventSource" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A2804ED32D06B92E00427469 /* Products */;
@@ -271,6 +365,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9AC545D6B8A68C6D6B87DD97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sanqianfa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC0FAB933EDF41D4C77781A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sanqianfa/Pods-Sanqianfa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sanqianfa/Pods-Sanqianfa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sanqianfa/Pods-Sanqianfa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2804ECE2D06B92E00427469 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +424,17 @@
 				A2804EEA2D06B93700427469 /* SanqianfaApp.swift in Sources */,
 				A2EC2E022D16A4F600AA5A3E /* ProfileViewModel.swift in Sources */,
 				A2804EF72D06BE1600427469 /* SQDesign.swift in Sources */,
+				A22B5F982D66FD29007DF3F6 /* Response+Extension.swift in Sources */,
+				A298295F2D68688E00DE5468 /* User.swift in Sources */,
+				A298295D2D6846F500DE5468 /* AsyncTest.swift in Sources */,
+				A22B5F992D66FD29007DF3F6 /* SQAPITarget.swift in Sources */,
+				A22B5F9B2D66FD29007DF3F6 /* NetworkPopPlugin.swift in Sources */,
+				A29829612D68697100DE5468 /* UserAPI.swift in Sources */,
+				A22B5F9D2D66FD29007DF3F6 /* Networking.swift in Sources */,
+				A22B5F9E2D66FD29007DF3F6 /* LoginAPI.swift in Sources */,
+				A22B5FA02D66FD29007DF3F6 /* MoyaProviderType+Extension.swift in Sources */,
+				A22B5FA22D66FD29007DF3F6 /* MoyaResult+Extension.swift in Sources */,
+				A22B5FA62D66FD29007DF3F6 /* NetworkLoggerPlugin.swift in Sources */,
 				A2A048622D17F83C00571542 /* HomeAskView.swift in Sources */,
 				A2EC2E042D16A4FF00AA5A3E /* ProfileSettingItem.swift in Sources */,
 				A22B5F572D66F03F007DF3F6 /* PhoneNumberInputView.swift in Sources */,
@@ -298,6 +445,7 @@
 				A2EC2DFE2D169AC100AA5A3E /* LearningView.swift in Sources */,
 				A2804EF42D06BD4D00427469 /* ViewFuns.swift in Sources */,
 				A2EC2E062D16A69A00AA5A3E /* HomeView.swift in Sources */,
+				A298295B2D671CC600DE5468 /* TodoAPI.swift in Sources */,
 				A2804EF02D06B96200427469 /* Color.swift in Sources */,
 				A2804EFF2D06C3B300427469 /* MainViewModel.swift in Sources */,
 			);
@@ -343,7 +491,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -406,7 +554,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 1;
@@ -428,6 +576,7 @@
 		};
 		A2804EE12D06B93200427469 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0812CBEF8C87EE22EC8220C4 /* Pods-Sanqianfa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +585,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sanqianfa/Preview Content\"";
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,6 +608,7 @@
 		};
 		A2804EE22D06B93200427469 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58AE466C6EEB8C792E1A85A4 /* Pods-Sanqianfa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +617,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sanqianfa/Preview Content\"";
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -510,9 +662,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A2906B702D60569C00F264D4 /* XCRemoteSwiftPackageReference "EventSource" */ = {
+		A29829572D67160A00DE5468 /* XCRemoteSwiftPackageReference "EventSource" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Recouse/EventSource.git";
+			repositoryURL = "https://gitee.com/lieami/EventSource.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.1.3;
@@ -521,9 +673,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A2906B712D60569C00F264D4 /* EventSource */ = {
+		A29829582D67160A00DE5468 /* EventSource */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A2906B702D60569C00F264D4 /* XCRemoteSwiftPackageReference "EventSource" */;
+			package = A29829572D67160A00DE5468 /* XCRemoteSwiftPackageReference "EventSource" */;
 			productName = EventSource;
 		};
 /* End XCSwiftPackageProductDependency section */

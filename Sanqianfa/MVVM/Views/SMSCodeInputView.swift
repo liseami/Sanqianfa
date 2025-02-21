@@ -25,7 +25,7 @@ struct SMSCodeInputView: View {
                 .background(Color.SQ.b2)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
             SQDesign.SmallBtn(text: "登录") {
-                vm.login()
+                await vm.login()
             }
             .frame(maxWidth:.infinity,alignment: .center)
             Spacer()

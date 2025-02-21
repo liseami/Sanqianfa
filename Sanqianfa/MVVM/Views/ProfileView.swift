@@ -7,13 +7,22 @@
 
 import SwiftUI
 
+
 struct ProfileView: View {
     @StateObject private var viewModel = ProfileViewModel()
     
     var body: some View {
         ScrollView(.vertical) {
             LazyVStack(alignment: .leading, spacing: 24) {
+                
+                
                 Text("我的")
+                    .font(.title)
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.bottom, 12)
+                
+                Text(viewModel.user.username)
                     .font(.title)
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -32,11 +41,19 @@ struct ProfileView: View {
                         ForEach(group.items) { item in
                             SettingRow(item: item)
                         }
+                        
+                        SettingRow(item: .init(title: "退出登录", rightText: "", icon: "", showArrow: true, hasToggle: false,action: {
+                            UserManager.shared.logout()
+                        }))
+                            
                     }
                 }
             }
             .padding(.horizontal, 16)
             Spacer().frame(height:120)
+        }
+        .task {
+            await viewModel.getUserInfo()
         }
     }
 }

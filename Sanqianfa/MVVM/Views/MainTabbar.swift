@@ -37,6 +37,7 @@ struct MainTabbar: View {
                 )
                 .frame(height: UIScreen.main.bounds.height * 0.42)
         }
+        .allowsHitTesting(false)
     }
 
     

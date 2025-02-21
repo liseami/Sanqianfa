@@ -72,19 +72,30 @@ enum SQDesign {
     }
 
     struct SmallBtn: View {
-        let action: () -> Void
+        let action: () async -> Void
         let text: String
-        init(text: String, action: @escaping () -> Void) {
+        @State var isLoading : Bool = false
+        init(text: String, action: @MainActor  @escaping () async -> Void) {
             self.text = text
             self.action = action
         }
 
         var body: some View {
             SQDesign.SQButton {
-                action()
+                isLoading = true
+                Task{
+                    await action()
+                    isLoading = false
+                }
             } label: {
-                Text(text)
-                    .makeSQText(.SQ.f1b, color: .SQ.f1)
+                Group{
+                    if isLoading {
+                        ProgressView()
+                    }else{
+                        Text(text)
+                            .makeSQText(.SQ.f1b, color: .SQ.f1)
+                    }
+                }
                     .padding(12)
                     .padding(.horizontal, 48)
                     .background(Color.SQ.main)
@@ -166,6 +177,11 @@ struct SQDesginTestView: View {
                 Group {
                     Text("基础组件")
                         .font(.headline)
+                    
+                    SQDesign.SmallBtn.init(text: "小按钮") {
+                        // 模拟异步操作，例如延迟1秒
+                        try! await Task.sleep(nanoseconds: 3 * 1_000_000_000)
+                    }
 
                     HStack(spacing: 20) {
                         SQDesign.YIN()

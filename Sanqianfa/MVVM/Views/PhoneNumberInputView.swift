@@ -23,8 +23,10 @@ struct PhoneNumberInputView: View {
                 .background(Color.SQ.b2)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
             SQDesign.SmallBtn(text: "获取验证码") {
-                vm.getSMSCode()
-                loginVm.loginStep += 1
+                let isOK = await vm.getSMSCode()
+                if isOK{
+                    loginVm.loginStep += 1
+                }else{}
             }
             .frame(maxWidth:.infinity,alignment: .center)
             Spacer()
