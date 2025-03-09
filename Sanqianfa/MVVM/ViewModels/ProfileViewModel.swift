@@ -5,7 +5,6 @@ class ProfileViewModel: ObservableObject {
     
     init() {
         setupSettingGroups()
-
     }
     
     @Published var user : User = .init()
@@ -30,7 +29,7 @@ class ProfileViewModel: ObservableObject {
                     icon: "person.circle",
                     showArrow: true,
                     hasToggle: false,
-                    action: { print("个人资料") }
+                    action: { MainViewModel.shared.pushTo(.editProfileView) }
                 ),
                 ProfileSettingItem(
                     title: "订阅会员",

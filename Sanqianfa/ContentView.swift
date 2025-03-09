@@ -10,38 +10,52 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var mainViewModel: MainViewModel = .shared
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color.SQ.b1.ignoresSafeArea()
-                Group {
-                    switch mainViewModel.currentTabbar {
-                    case .home:
-                        HomeView()
-                    case .things:
-                        HistrotyView()
-                    case .learn:
-                        LearningView()
-                    case .profile:
-                        ProfileView()
+        NavigationStack(path: $mainViewModel.navigationPath) {
+            root
+                //
+                .navigationDestination(for: AppPagePath.self, destination: { path in
+                    switch path {
+                    case .subView1: Color.red.onTapGesture {
+                            mainViewModel.navigationPath.append(AppPagePath.subView2)
+                        }
+                    case .subView2: Color.blue
+                    case .editProfileView: ProfileEditView(username: UserManager.shared.user.username)
+                    case .x1: Color.brown
+                    case .x2: Color.clear
                     }
+                })
+                .fullScreenCover(isPresented: $mainViewModel.showDivinationView) {
+                    DivinationView()
                 }
-                .makeSQText(.SQ.big3b, color: .SQ.f1)
-                MainTabbar()
-
-                if mainViewModel.showInputCard {
-                    HomeAskView()
+                .sheet(isPresented: $mainViewModel.showAnswerView) {
+                    AnswerView()
                 }
-            }
-            .fullScreenCover(isPresented: $mainViewModel.showDivinationView) {
-                DivinationView()
-            }
-            .sheet(isPresented: $mainViewModel.showAnswerView) {
-                AnswerView()
-            }
         }
     }
 
-    
+    var root: some View {
+        ZStack {
+            Color.SQ.b1.ignoresSafeArea()
+            Group {
+                switch mainViewModel.currentTabbar {
+                case .home:
+                    HomeView()
+                case .things:
+                    HistrotyView()
+                case .learn:
+                    LearningView()
+                case .profile:
+                    ProfileView()
+                }
+            }
+            .makeSQText(.SQ.big3b, color: .SQ.f1)
+            MainTabbar()
+
+            if mainViewModel.showInputCard {
+                HomeAskView()
+            }
+        }
+    }
 }
 
 #Preview {

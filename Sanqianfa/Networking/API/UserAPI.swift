@@ -12,7 +12,7 @@ import Foundation
 enum UserAPI: SQAPITarget {
     ///  短信验证码注册
     case profile
-    
+    case update(username : String)
     var group: String {
         return "/api/v1/user"
     }
@@ -26,6 +26,7 @@ enum UserAPI: SQAPITarget {
 
     var parameters: [String: Any]? {
         switch self {
+        case .update(let username) : return ["username":username]
         default : return nil
         
         }

@@ -10,6 +10,7 @@
 		40E16A6E95B53BF232E3FD7F /* Pods_Sanqianfa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4591B74E4D336F53645092E7 /* Pods_Sanqianfa.framework */; };
 		A21C920F2D195F9700CFF34B /* DivinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C920E2D195F9700CFF34B /* DivinationView.swift */; };
 		A21C92112D196A6900CFF34B /* DivinationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C92102D196A6900CFF34B /* DivinationTool.swift */; };
+		A2221A3F2D7DCAC900EB4224 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2221A3E2D7DCAC900EB4224 /* ProfileEditView.swift */; };
 		A22B5F552D66EE88007DF3F6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F542D66EE88007DF3F6 /* LoginView.swift */; };
 		A22B5F572D66F03F007DF3F6 /* PhoneNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F562D66F03F007DF3F6 /* PhoneNumberInputView.swift */; };
 		A22B5F592D66F08F007DF3F6 /* WellComeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B5F582D66F08F007DF3F6 /* WellComeView.swift */; };
@@ -55,6 +56,7 @@
 		58AE466C6EEB8C792E1A85A4 /* Pods-Sanqianfa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanqianfa.release.xcconfig"; path = "Target Support Files/Pods-Sanqianfa/Pods-Sanqianfa.release.xcconfig"; sourceTree = "<group>"; };
 		A21C920E2D195F9700CFF34B /* DivinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationView.swift; sourceTree = "<group>"; };
 		A21C92102D196A6900CFF34B /* DivinationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationTool.swift; sourceTree = "<group>"; };
+		A2221A3E2D7DCAC900EB4224 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		A22B5F542D66EE88007DF3F6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A22B5F562D66F03F007DF3F6 /* PhoneNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputView.swift; sourceTree = "<group>"; };
 		A22B5F582D66F08F007DF3F6 /* WellComeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellComeView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				A2804EE52D06B93700427469 /* Assets.xcassets */,
 				A2804EE62D06B93700427469 /* ContentView.swift */,
+				A2221A3E2D7DCAC900EB4224 /* ProfileEditView.swift */,
 				A2804EE72D06B93700427469 /* SanqianfaApp.swift */,
 				A22B5F962D66FD29007DF3F6 /* Networking */,
 				A2804EEE2D06B94E00427469 /* DesignSystem */,
@@ -415,6 +418,7 @@
 				A21C92112D196A6900CFF34B /* DivinationTool.swift in Sources */,
 				A2804EF22D06B96600427469 /* Font.swift in Sources */,
 				A2906B6F2D60538B00F264D4 /* AnswerView.swift in Sources */,
+				A2221A3F2D7DCAC900EB4224 /* ProfileEditView.swift in Sources */,
 				A2EC2E002D16A0EB00AA5A3E /* ProfileView.swift in Sources */,
 				A2804EE92D06B93700427469 /* ContentView.swift in Sources */,
 				A22B5F592D66F08F007DF3F6 /* WellComeView.swift in Sources */,

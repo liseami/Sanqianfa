@@ -20,6 +20,10 @@ class UserManager: ObservableObject {
             self.token = UserDefaults.standard.string(forKey: "local_token")!
             self.userLogged = true
         }
+        
+        Task{
+            await self.getUserInfo()
+        }
     }
     
     @MainActor
@@ -27,6 +31,18 @@ class UserManager: ObservableObject {
         UserDefaults.standard.set(nil, forKey: "local_token")
         self.userLogged = false
     }
+    
+    @Published var user : User = .init()
+    
+    // 获取用户信息
+    @MainActor
+    func getUserInfo() async {
+        let  t = UserAPI.profile
+        let r = await Networking.request_async(t)
+        if r.is200Ok { if let user = r.mapObject(User.self){ self.user = user } }
+    }
+    
+    
 
     // 发送短信验证码
     func getSMSCode() async -> Bool {
