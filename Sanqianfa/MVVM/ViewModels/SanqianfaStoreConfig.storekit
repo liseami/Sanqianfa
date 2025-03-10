@@ -1,0 +1,172 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "DD4E3BDD",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1999",
+      "familyShareable" : false,
+      "internalID" : "E2DB7D1E",
+      "localizations" : [
+        {
+          "description" : "解锁钱币样式",
+          "displayName" : "钱币样式1",
+          "locale" : "zh_CN"
+        }
+      ],
+      "productID" : "com.sanqianfa.coinstyle.1",
+      "referenceName" : "钱币样式🪙1",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1",
+      "familyShareable" : false,
+      "internalID" : "88B7224C",
+      "localizations" : [
+        {
+          "description" : "可消耗金币",
+          "displayName" : "三钱法金币",
+          "locale" : "zh_CN"
+        }
+      ],
+      "productID" : "com.sanqianfa.coin",
+      "referenceName" : "金币",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "zh_CN",
+    "_storefront" : "CHN",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "D6FF440F",
+      "localizations" : [
+
+      ],
+      "name" : "SanqianfaSubGroup",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "0A93E167",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "一个月会员使用权",
+              "displayName" : "月度会员",
+              "locale" : "zh_CN"
+            }
+          ],
+          "productID" : "com.sanqianfa.month.1",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "月度会员",
+          "subscriptionGroupID" : "D6FF440F",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "999",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "08FB395E",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "一年会员使用权",
+              "displayName" : "年度会员",
+              "locale" : "zh_CN"
+            }
+          ],
+          "productID" : "com.sanqianfa.year.1",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "年度会员",
+          "subscriptionGroupID" : "D6FF440F",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

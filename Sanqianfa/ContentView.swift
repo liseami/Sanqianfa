@@ -15,13 +15,8 @@ struct ContentView: View {
                 //
                 .navigationDestination(for: AppPagePath.self, destination: { path in
                     switch path {
-                    case .subView1: Color.red.onTapGesture {
-                            mainViewModel.navigationPath.append(AppPagePath.subView2)
-                        }
-                    case .subView2: Color.blue
                     case .editProfileView: ProfileEditView(username: UserManager.shared.user.username)
-                    case .x1: Color.brown
-                    case .x2: Color.clear
+                    case .store : SanqianStoreView()
                     }
                 })
                 .fullScreenCover(isPresented: $mainViewModel.showDivinationView) {

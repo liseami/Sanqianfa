@@ -7,16 +7,14 @@ class ProfileViewModel: ObservableObject {
         setupSettingGroups()
     }
     
-    @Published var user : User = .init()
-    
-    
+    @Published var user: User = .init()
     
     // 获取用户信息
     @MainActor
     func getUserInfo() async {
-        let  t = UserAPI.profile
+        let t = UserAPI.profile
         let r = await Networking.request_async(t)
-        if r.is200Ok { if let user = r.mapObject(User.self){ self.user = user } }
+        if r.is200Ok { if let user = r.mapObject(User.self) { self.user = user } }
     }
     
     private func setupSettingGroups() {
@@ -37,7 +35,7 @@ class ProfileViewModel: ObservableObject {
                     icon: "crown",
                     showArrow: true,
                     hasToggle: false,
-                    action: { print("订阅会员") }
+                    action: { MainViewModel.shared.pushTo(.store) }
                 )
             ]),
             
@@ -162,4 +160,4 @@ class ProfileViewModel: ObservableObject {
             ])
         ]
     }
-} 
+}

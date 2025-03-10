@@ -47,9 +47,7 @@ class MainViewModel: ObservableObject {
 }
 
 public enum AppPagePath {
-    case subView1
-    case subView2
+    case store
     case editProfileView
-    case x1
-    case x2
+    
 }
